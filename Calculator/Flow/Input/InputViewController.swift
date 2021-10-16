@@ -1,27 +1,34 @@
 import UIKit
 import RxSwift
+import RxSwiftExt
 
 class InputViewController: RxViewController<InputView> {
+    let viewModel = InputViewModel()
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        customView.setTheme()
         setupBindings()
     }
 
     private func setupBindings() {
         customView.stepper.rx.value
-            .map { Int($0).description }
-            .bind(to: customView.stepperLabel.rx.text)
+            .map { Int($0) }
+            .bind(to: viewModel.stepperValue)
             .disposed(by: bag)
 
         customView.slider.rx.value
-            .map { Int($0).description }
-            .bind(to: customView.sliderLabel.rx.text)
+            .map { Int($0) }
+            .bind(to: viewModel.sliderValue)
             .disposed(by: bag)
 
-        customView.segmentedControl.rx.image
-            .map { $0?.withTintColor(.black) }
-            .bind(to: customView.operationImage.rx.image)
+        customView.segmentedControl.rx.value
+            .map { InputViewModel.Operation.init(rawValue: $0) }
+            .unwrap()
+            .bind(to: viewModel.operation)
+            .disposed(by: bag)
+
+        viewModel.isCalculateButtonEnabled
+            .bind(to: customView.calculateButton.rx.isEnabled)
             .disposed(by: bag)
     }
 }

@@ -10,6 +10,7 @@ class CalculatorCoordinator: Coordinator {
 
     override func start() {
         let inputScreen = R.storyboard.input.inputViewController()!
+        inputScreen.viewModel.coordinator = self
         navigationController.viewControllers = [inputScreen]
     }
 }

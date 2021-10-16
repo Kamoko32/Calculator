@@ -25,6 +25,8 @@
 		DEE52E67271B3BF70090F645 /* CalculatorCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE52E66271B3BF70090F645 /* CalculatorCoordinator.swift */; };
 		DEE52E69271B3EEC0090F645 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE52E68271B3EEC0090F645 /* R.generated.swift */; };
 		DEE52E6C271B4EFB0090F645 /* RX+UISegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE52E6B271B4EFB0090F645 /* RX+UISegmentedControl.swift */; };
+		DEE52E70271B73310090F645 /* InputViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE52E6F271B73310090F645 /* InputViewModel.swift */; };
+		DEE52E72271B7B620090F645 /* RxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE52E71271B7B620090F645 /* RxView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +51,8 @@
 		DEE52E66271B3BF70090F645 /* CalculatorCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorCoordinator.swift; sourceTree = "<group>"; };
 		DEE52E68271B3EEC0090F645 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		DEE52E6B271B4EFB0090F645 /* RX+UISegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RX+UISegmentedControl.swift"; sourceTree = "<group>"; };
+		DEE52E6F271B73310090F645 /* InputViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputViewModel.swift; sourceTree = "<group>"; };
+		DEE52E71271B7B620090F645 /* RxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxView.swift; sourceTree = "<group>"; };
 		F86D8B7016BE7FB0907D2CD2 /* Pods-Calculator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Calculator.release.xcconfig"; path = "Target Support Files/Pods-Calculator/Pods-Calculator.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -130,6 +134,7 @@
 				DEC4F606271B174B008294B5 /* Coordinator.swift */,
 				DEC4F610271B1D7B008294B5 /* CoordinatorType.swift */,
 				DEC4F60C271B1A82008294B5 /* RxViewController.swift */,
+				DEE52E71271B7B620090F645 /* RxView.swift */,
 				DEC4F60E271B1B1E008294B5 /* ViewModel.swift */,
 				DEC4F60A271B1A74008294B5 /* HasCustomView.swift */,
 			);
@@ -167,6 +172,7 @@
 			children = (
 				DEC4F61C271B31EC008294B5 /* Input.storyboard */,
 				DEC4F61E271B364D008294B5 /* InputView.swift */,
+				DEE52E6F271B73310090F645 /* InputViewModel.swift */,
 				DEE52E64271B38E40090F645 /* InputViewController.swift */,
 			);
 			path = Input;
@@ -325,8 +331,10 @@
 				DEE52E6C271B4EFB0090F645 /* RX+UISegmentedControl.swift in Sources */,
 				DEE52E69271B3EEC0090F645 /* R.generated.swift in Sources */,
 				DE3CAD1C271B0B3900B8DA7D /* SceneDelegate.swift in Sources */,
+				DEE52E70271B73310090F645 /* InputViewModel.swift in Sources */,
 				DEC4F611271B1D7B008294B5 /* CoordinatorType.swift in Sources */,
 				DEC4F61A271B2897008294B5 /* ApiClientErrors.swift in Sources */,
+				DEE52E72271B7B620090F645 /* RxView.swift in Sources */,
 				DEC4F61F271B364D008294B5 /* InputView.swift in Sources */,
 				DEC4F60B271B1A74008294B5 /* HasCustomView.swift in Sources */,
 				DEC4F60F271B1B1E008294B5 /* ViewModel.swift in Sources */,

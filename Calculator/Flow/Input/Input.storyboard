@@ -149,6 +149,7 @@
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="yzW-Cb-RcA" secondAttribute="trailing" constant="20" id="kS2-P1-h7n"/>
                         </constraints>
                         <connections>
+                            <outlet property="calculateButton" destination="uBk-wl-0my" id="uGq-UP-a5Q"/>
                             <outlet property="equationView" destination="fNC-gt-LCF" id="6fl-Ng-3sT"/>
                             <outlet property="operationImage" destination="FFi-7w-CtK" id="32r-6L-exH"/>
                             <outlet property="segmentedControl" destination="S0Q-42-PdS" id="ory-cC-w7y"/>
