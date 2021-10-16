@@ -24,6 +24,7 @@
 		DEE52E65271B38E40090F645 /* InputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE52E64271B38E40090F645 /* InputViewController.swift */; };
 		DEE52E67271B3BF70090F645 /* CalculatorCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE52E66271B3BF70090F645 /* CalculatorCoordinator.swift */; };
 		DEE52E69271B3EEC0090F645 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE52E68271B3EEC0090F645 /* R.generated.swift */; };
+		DEE52E6C271B4EFB0090F645 /* RX+UISegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE52E6B271B4EFB0090F645 /* RX+UISegmentedControl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 		DEE52E64271B38E40090F645 /* InputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputViewController.swift; sourceTree = "<group>"; };
 		DEE52E66271B3BF70090F645 /* CalculatorCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorCoordinator.swift; sourceTree = "<group>"; };
 		DEE52E68271B3EEC0090F645 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
+		DEE52E6B271B4EFB0090F645 /* RX+UISegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RX+UISegmentedControl.swift"; sourceTree = "<group>"; };
 		F86D8B7016BE7FB0907D2CD2 /* Pods-Calculator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Calculator.release.xcconfig"; path = "Target Support Files/Pods-Calculator/Pods-Calculator.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -100,6 +102,7 @@
 		DE3CAD18271B0B3900B8DA7D /* Calculator */ = {
 			isa = PBXGroup;
 			children = (
+				DEE52E6A271B4EDC0090F645 /* Extensions */,
 				DEC4F616271B2720008294B5 /* Services */,
 				DEC4F605271B173F008294B5 /* Base */,
 				DEC4F615271B2558008294B5 /* Flow */,
@@ -167,6 +170,14 @@
 				DEE52E64271B38E40090F645 /* InputViewController.swift */,
 			);
 			path = Input;
+			sourceTree = "<group>";
+		};
+		DEE52E6A271B4EDC0090F645 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DEE52E6B271B4EFB0090F645 /* RX+UISegmentedControl.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -311,6 +322,7 @@
 				DEC4F60D271B1A82008294B5 /* RxViewController.swift in Sources */,
 				DE3CAD1A271B0B3900B8DA7D /* AppDelegate.swift in Sources */,
 				DEC4F618271B27A4008294B5 /* ApiClient.swift in Sources */,
+				DEE52E6C271B4EFB0090F645 /* RX+UISegmentedControl.swift in Sources */,
 				DEE52E69271B3EEC0090F645 /* R.generated.swift in Sources */,
 				DE3CAD1C271B0B3900B8DA7D /* SceneDelegate.swift in Sources */,
 				DEC4F611271B1D7B008294B5 /* CoordinatorType.swift in Sources */,
