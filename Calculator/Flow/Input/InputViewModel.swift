@@ -19,6 +19,7 @@ class InputViewModel: ViewModel<CalculatorCoordinator> {
         }
     }
 
+    let calculate = PublishRelay<Void>()
     let stepperValue = BehaviorRelay<Int>(value: 0)
     let sliderValue = BehaviorRelay<Int>(value: 0)
     let operation = BehaviorRelay<Operation>(value: .addition)
@@ -26,11 +27,22 @@ class InputViewModel: ViewModel<CalculatorCoordinator> {
     let isCalculateButtonEnabled = BehaviorRelay<Bool>(value: false)
 
     override func setupBindings() {
+        let expresion = Observable.combineLatest(stepperValue, sliderValue, operation)
+            .map { stepper, slider, operation in
+                "\(stepper)" + "\(operation.operationSign)" + "\(slider)"
+            }
+
         Observable.combineLatest(operation, sliderValue)
             .map { operation, value in
                 !(operation == .division && value == 0)
             }
             .bind(to: isCalculateButtonEnabled)
             .disposed(by: bag)
+
+        calculate
+            .withLatestFrom(expresion)
+            .subscribe(onNext: { [weak self] in
+                print($0)
+            }).disposed(by: bag)
     }
 }

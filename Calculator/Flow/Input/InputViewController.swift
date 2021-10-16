@@ -22,13 +22,17 @@ class InputViewController: RxViewController<InputView> {
             .disposed(by: bag)
 
         customView.segmentedControl.rx.value
-            .map { InputViewModel.Operation.init(rawValue: $0) }
+            .map { .init(rawValue: $0) }
             .unwrap()
             .bind(to: viewModel.operation)
             .disposed(by: bag)
 
         viewModel.isCalculateButtonEnabled
             .bind(to: customView.calculateButton.rx.isEnabled)
+            .disposed(by: bag)
+
+        customView.calculateButton.rx.tap
+            .bind(to: viewModel.calculate)
             .disposed(by: bag)
     }
 }
