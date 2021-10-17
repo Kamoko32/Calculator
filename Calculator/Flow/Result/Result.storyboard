@@ -25,14 +25,14 @@
                                 <color key="textColor" systemColor="systemOrangeColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="250" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z42-QQ-TqB">
-                                <rect key="frame" x="145.5" y="216" width="123.5" height="84"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="250" textAlignment="center" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z42-QQ-TqB">
+                                <rect key="frame" x="145.5" y="286" width="123.5" height="84"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="70"/>
                                 <color key="textColor" systemColor="systemOrangeColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="dL4-tb-XET">
-                                <rect key="frame" x="188.5" y="239.5" width="37" height="37"/>
+                                <rect key="frame" x="188.5" y="309.5" width="37" height="37"/>
                                 <color key="color" systemColor="systemOrangeColor"/>
                             </activityIndicatorView>
                         </subviews>
@@ -47,7 +47,7 @@
                             <constraint firstItem="jTW-1f-Irz" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="Szj-JK-pOm"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="lOh-Tv-XuA" secondAttribute="trailing" id="UKj-C3-9JI"/>
                             <constraint firstItem="Z42-QQ-TqB" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="YBj-Bp-XHX"/>
-                            <constraint firstItem="lOh-Tv-XuA" firstAttribute="top" secondItem="Z42-QQ-TqB" secondAttribute="bottom" constant="50" id="bCB-nJ-vYc"/>
+                            <constraint firstItem="lOh-Tv-XuA" firstAttribute="top" secondItem="Z42-QQ-TqB" secondAttribute="bottom" constant="-20" id="bCB-nJ-vYc"/>
                             <constraint firstItem="dL4-tb-XET" firstAttribute="centerX" secondItem="Z42-QQ-TqB" secondAttribute="centerX" id="gQD-wI-aJc"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="lOh-Tv-XuA" secondAttribute="bottom" id="qAM-WA-Ws4"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Z42-QQ-TqB" secondAttribute="trailing" constant="10" id="xWv-T0-uGp"/>

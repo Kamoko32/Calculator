@@ -20,4 +20,9 @@ class CalculatorCoordinator: Coordinator {
         resultScreen.viewModel.calculate(expression: expression)
         rootViewController.present(resultScreen, animated: true, completion: nil)
     }
+
+    func closeResultScreen() {
+        guard let presentedViewController = rootViewController.presentedViewController as? ResultViewController else { return }
+        presentedViewController.dismiss(animated: true, completion: nil)
+    }
 }

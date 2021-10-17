@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		622FECB53B9622B472C1E8C2 /* Pods_Calculator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 488637C1B58220DF9AA26B5D /* Pods_Calculator.framework */; };
+		DE1B8B37271BAD2800EBCA14 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1B8B36271BAD2800EBCA14 /* Client.swift */; };
 		DE3CAD1A271B0B3900B8DA7D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3CAD19271B0B3900B8DA7D /* AppDelegate.swift */; };
 		DE3CAD1C271B0B3900B8DA7D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3CAD1B271B0B3900B8DA7D /* SceneDelegate.swift */; };
 		DE3CAD23271B0B3A00B8DA7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE3CAD22271B0B3A00B8DA7D /* Assets.xcassets */; };
@@ -40,6 +41,7 @@
 /* Begin PBXFileReference section */
 		488637C1B58220DF9AA26B5D /* Pods_Calculator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Calculator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E4BDFB6644712B4D0434BC1 /* Pods-Calculator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Calculator.debug.xcconfig"; path = "Target Support Files/Pods-Calculator/Pods-Calculator.debug.xcconfig"; sourceTree = "<group>"; };
+		DE1B8B36271BAD2800EBCA14 /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
 		DE3CAD16271B0B3900B8DA7D /* Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE3CAD19271B0B3900B8DA7D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DE3CAD1B271B0B3900B8DA7D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -182,6 +184,7 @@
 			children = (
 				DEC4F617271B27A4008294B5 /* ApiClient.swift */,
 				DEC4F619271B2897008294B5 /* ApiClientErrors.swift */,
+				DE1B8B36271BAD2800EBCA14 /* Client.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -211,8 +214,8 @@
 			children = (
 				DEE52E74271B82FB0090F645 /* Result.storyboard */,
 				DEE52E78271B87750090F645 /* ResultView.swift */,
-				DEE52E76271B87570090F645 /* ResultViewController.swift */,
 				DEE52E7F271B94E60090F645 /* ResultViewModel.swift */,
+				DEE52E76271B87570090F645 /* ResultViewController.swift */,
 			);
 			path = Result;
 			sourceTree = "<group>";
@@ -385,6 +388,7 @@
 				DEE52E77271B87570090F645 /* ResultViewController.swift in Sources */,
 				DEE52E86271B99C30090F645 /* MathJSRepository.swift in Sources */,
 				DE3CAD1C271B0B3900B8DA7D /* SceneDelegate.swift in Sources */,
+				DE1B8B37271BAD2800EBCA14 /* Client.swift in Sources */,
 				DEE52E70271B73310090F645 /* InputViewModel.swift in Sources */,
 				DEE52E79271B87750090F645 /* ResultView.swift in Sources */,
 				DEE52E7E271B94B40090F645 /* MathExpression.swift in Sources */,
@@ -533,6 +537,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 72VADQKT7F;
@@ -540,6 +545,7 @@
 				INFOPLIST_FILE = Calculator/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
@@ -562,6 +568,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 72VADQKT7F;
@@ -569,6 +576,7 @@
 				INFOPLIST_FILE = Calculator/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;

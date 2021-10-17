@@ -41,6 +41,7 @@ class InputViewModel: ViewModel<CalculatorCoordinator> {
 
         calculate
             .withLatestFrom(expression)
+            .observeOnMain()
             .subscribe(onNext: { [unowned self] in
                 coordinator?.presentResultScreen(expression: $0)
             }).disposed(by: bag)
