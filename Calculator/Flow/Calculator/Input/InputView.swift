@@ -11,6 +11,7 @@ class InputView: RxView {
     @IBOutlet weak var equationView: UIView!
     @IBOutlet weak var spiderNetImage: UIImageView!
     @IBOutlet weak var calculateButton: UIButton!
+    @IBOutlet weak var operationView: UIView!
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -35,6 +36,7 @@ class InputView: RxView {
     private func configureEquationView() {
         equationView.layer.cornerRadius = 4
         operationImage.layer.cornerRadius = 4
+        operationView.layer.cornerRadius = 4
     }
 
     private func configureSpiderNetImage() {

@@ -34,14 +34,24 @@
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" translatesAutoresizingMaskIntoConstraints="NO" id="FFi-7w-CtK">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w27-YG-DlF">
                                                 <rect key="frame" x="58.5" y="33" width="30" height="30"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" translatesAutoresizingMaskIntoConstraints="NO" id="FFi-7w-CtK">
+                                                        <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                                    </imageView>
+                                                </subviews>
                                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="30" id="Ivr-ra-1Uk"/>
-                                                    <constraint firstAttribute="width" secondItem="FFi-7w-CtK" secondAttribute="height" multiplier="1:1" id="Wlv-p0-wuN"/>
+                                                    <constraint firstItem="FFi-7w-CtK" firstAttribute="top" secondItem="w27-YG-DlF" secondAttribute="top" id="BCj-Bi-5Xu"/>
+                                                    <constraint firstAttribute="bottom" secondItem="FFi-7w-CtK" secondAttribute="bottom" id="ERR-mZ-IYV"/>
+                                                    <constraint firstItem="FFi-7w-CtK" firstAttribute="leading" secondItem="w27-YG-DlF" secondAttribute="leading" id="dCD-gp-26W"/>
+                                                    <constraint firstAttribute="height" constant="30" id="mqE-o6-MYV"/>
+                                                    <constraint firstAttribute="trailing" secondItem="FFi-7w-CtK" secondAttribute="trailing" id="swI-AR-R2P"/>
+                                                    <constraint firstAttribute="width" secondItem="w27-YG-DlF" secondAttribute="height" multiplier="1:1" id="x7J-qR-bhP"/>
                                                 </constraints>
-                                            </imageView>
+                                            </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SpW-FJ-3Ge">
                                                 <rect key="frame" x="98.5" y="0.0" width="48.5" height="95.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="80"/>
@@ -152,6 +162,7 @@
                             <outlet property="calculateButton" destination="uBk-wl-0my" id="uGq-UP-a5Q"/>
                             <outlet property="equationView" destination="fNC-gt-LCF" id="6fl-Ng-3sT"/>
                             <outlet property="operationImage" destination="FFi-7w-CtK" id="32r-6L-exH"/>
+                            <outlet property="operationView" destination="w27-YG-DlF" id="ZCn-qY-oH1"/>
                             <outlet property="segmentedControl" destination="S0Q-42-PdS" id="ory-cC-w7y"/>
                             <outlet property="slider" destination="yzW-Cb-RcA" id="gp6-mP-ptg"/>
                             <outlet property="sliderLabel" destination="SpW-FJ-3Ge" id="LyG-r9-Nmv"/>
