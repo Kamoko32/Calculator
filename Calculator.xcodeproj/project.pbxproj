@@ -27,6 +27,14 @@
 		DEE52E6C271B4EFB0090F645 /* RX+UISegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE52E6B271B4EFB0090F645 /* RX+UISegmentedControl.swift */; };
 		DEE52E70271B73310090F645 /* InputViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE52E6F271B73310090F645 /* InputViewModel.swift */; };
 		DEE52E72271B7B620090F645 /* RxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE52E71271B7B620090F645 /* RxView.swift */; };
+		DEE52E75271B82FB0090F645 /* Result.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEE52E74271B82FB0090F645 /* Result.storyboard */; };
+		DEE52E77271B87570090F645 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE52E76271B87570090F645 /* ResultViewController.swift */; };
+		DEE52E79271B87750090F645 /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE52E78271B87750090F645 /* ResultView.swift */; };
+		DEE52E7B271B89A50090F645 /* Observable+Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE52E7A271B89A50090F645 /* Observable+Queue.swift */; };
+		DEE52E7E271B94B40090F645 /* MathExpression.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE52E7D271B94B40090F645 /* MathExpression.swift */; };
+		DEE52E80271B94E60090F645 /* ResultViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE52E7F271B94E60090F645 /* ResultViewModel.swift */; };
+		DEE52E82271B99040090F645 /* MathJSExpression.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE52E81271B99040090F645 /* MathJSExpression.swift */; };
+		DEE52E86271B99C30090F645 /* MathJSRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE52E85271B99C30090F645 /* MathJSRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +61,14 @@
 		DEE52E6B271B4EFB0090F645 /* RX+UISegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RX+UISegmentedControl.swift"; sourceTree = "<group>"; };
 		DEE52E6F271B73310090F645 /* InputViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputViewModel.swift; sourceTree = "<group>"; };
 		DEE52E71271B7B620090F645 /* RxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxView.swift; sourceTree = "<group>"; };
+		DEE52E74271B82FB0090F645 /* Result.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Result.storyboard; sourceTree = "<group>"; };
+		DEE52E76271B87570090F645 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		DEE52E78271B87750090F645 /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
+		DEE52E7A271B89A50090F645 /* Observable+Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Observable+Queue.swift"; sourceTree = "<group>"; };
+		DEE52E7D271B94B40090F645 /* MathExpression.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathExpression.swift; sourceTree = "<group>"; };
+		DEE52E7F271B94E60090F645 /* ResultViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewModel.swift; sourceTree = "<group>"; };
+		DEE52E81271B99040090F645 /* MathJSExpression.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathJSExpression.swift; sourceTree = "<group>"; };
+		DEE52E85271B99C30090F645 /* MathJSRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathJSRepository.swift; sourceTree = "<group>"; };
 		F86D8B7016BE7FB0907D2CD2 /* Pods-Calculator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Calculator.release.xcconfig"; path = "Target Support Files/Pods-Calculator/Pods-Calculator.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -109,6 +125,8 @@
 				DEE52E6A271B4EDC0090F645 /* Extensions */,
 				DEC4F616271B2720008294B5 /* Services */,
 				DEC4F605271B173F008294B5 /* Base */,
+				DEE52E7C271B94650090F645 /* Models */,
+				DEE52E84271B996E0090F645 /* Repositories */,
 				DEC4F615271B2558008294B5 /* Flow */,
 				DEC4F614271B2546008294B5 /* Resources */,
 				DEC4F604271B1711008294B5 /* SupportingFiles */,
@@ -152,6 +170,7 @@
 		DEC4F615271B2558008294B5 /* Flow */ = {
 			isa = PBXGroup;
 			children = (
+				DEE52E73271B82C00090F645 /* Result */,
 				DEC4F61B271B31C0008294B5 /* Input */,
 				DEE52E66271B3BF70090F645 /* CalculatorCoordinator.swift */,
 			);
@@ -182,8 +201,37 @@
 			isa = PBXGroup;
 			children = (
 				DEE52E6B271B4EFB0090F645 /* RX+UISegmentedControl.swift */,
+				DEE52E7A271B89A50090F645 /* Observable+Queue.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		DEE52E73271B82C00090F645 /* Result */ = {
+			isa = PBXGroup;
+			children = (
+				DEE52E74271B82FB0090F645 /* Result.storyboard */,
+				DEE52E78271B87750090F645 /* ResultView.swift */,
+				DEE52E76271B87570090F645 /* ResultViewController.swift */,
+				DEE52E7F271B94E60090F645 /* ResultViewModel.swift */,
+			);
+			path = Result;
+			sourceTree = "<group>";
+		};
+		DEE52E7C271B94650090F645 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DEE52E7D271B94B40090F645 /* MathExpression.swift */,
+				DEE52E81271B99040090F645 /* MathJSExpression.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DEE52E84271B996E0090F645 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				DEE52E85271B99C30090F645 /* MathJSRepository.swift */,
+			);
+			path = Repositories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,6 +298,7 @@
 				DE3CAD26271B0B3A00B8DA7D /* LaunchScreen.storyboard in Resources */,
 				DEC4F61D271B31EC008294B5 /* Input.storyboard in Resources */,
 				DE3CAD23271B0B3A00B8DA7D /* Assets.xcassets in Resources */,
+				DEE52E75271B82FB0090F645 /* Result.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,15 +372,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				DEE52E67271B3BF70090F645 /* CalculatorCoordinator.swift in Sources */,
+				DEE52E80271B94E60090F645 /* ResultViewModel.swift in Sources */,
 				DEE52E65271B38E40090F645 /* InputViewController.swift in Sources */,
 				DEC4F607271B174B008294B5 /* Coordinator.swift in Sources */,
 				DEC4F60D271B1A82008294B5 /* RxViewController.swift in Sources */,
 				DE3CAD1A271B0B3900B8DA7D /* AppDelegate.swift in Sources */,
+				DEE52E7B271B89A50090F645 /* Observable+Queue.swift in Sources */,
 				DEC4F618271B27A4008294B5 /* ApiClient.swift in Sources */,
 				DEE52E6C271B4EFB0090F645 /* RX+UISegmentedControl.swift in Sources */,
 				DEE52E69271B3EEC0090F645 /* R.generated.swift in Sources */,
+				DEE52E82271B99040090F645 /* MathJSExpression.swift in Sources */,
+				DEE52E77271B87570090F645 /* ResultViewController.swift in Sources */,
+				DEE52E86271B99C30090F645 /* MathJSRepository.swift in Sources */,
 				DE3CAD1C271B0B3900B8DA7D /* SceneDelegate.swift in Sources */,
 				DEE52E70271B73310090F645 /* InputViewModel.swift in Sources */,
+				DEE52E79271B87750090F645 /* ResultView.swift in Sources */,
+				DEE52E7E271B94B40090F645 /* MathExpression.swift in Sources */,
 				DEC4F611271B1D7B008294B5 /* CoordinatorType.swift in Sources */,
 				DEC4F61A271B2897008294B5 /* ApiClientErrors.swift in Sources */,
 				DEE52E72271B7B620090F645 /* RxView.swift in Sources */,
@@ -485,8 +541,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -514,8 +570,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
