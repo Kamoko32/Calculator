@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Result View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="ResultViewController" id="Y6W-OH-hqX" customClass="ResultViewController" customModule="Calculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc" customClass="ResultView" customModule="Calculator" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pumpkin" translatesAutoresizingMaskIntoConstraints="NO" id="lOh-Tv-XuA">
+                                <rect key="frame" x="0.0" y="350" width="414" height="512"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Result" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jTW-1f-Irz">
+                                <rect key="frame" x="166.5" y="64" width="81" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" systemColor="systemOrangeColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="250" textAlignment="center" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z42-QQ-TqB">
+                                <rect key="frame" x="145.5" y="286" width="123.5" height="84"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="70"/>
+                                <color key="textColor" systemColor="systemOrangeColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="dL4-tb-XET">
+                                <rect key="frame" x="188.5" y="309.5" width="37" height="37"/>
+                                <color key="color" systemColor="systemOrangeColor"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="lOh-Tv-XuA" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="2cR-Yh-oxI"/>
+                            <constraint firstItem="jTW-1f-Irz" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="20" id="GPb-is-Teg"/>
+                            <constraint firstItem="Z42-QQ-TqB" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="10" id="IGK-tx-fRj"/>
+                            <constraint firstItem="Z42-QQ-TqB" firstAttribute="top" relation="greaterThanOrEqual" secondItem="jTW-1f-Irz" secondAttribute="bottom" constant="5" id="MED-Vo-vLh"/>
+                            <constraint firstItem="dL4-tb-XET" firstAttribute="centerY" secondItem="Z42-QQ-TqB" secondAttribute="centerY" id="SEf-jD-z5x"/>
+                            <constraint firstItem="jTW-1f-Irz" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="Szj-JK-pOm"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="lOh-Tv-XuA" secondAttribute="trailing" id="UKj-C3-9JI"/>
+                            <constraint firstItem="Z42-QQ-TqB" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="YBj-Bp-XHX"/>
+                            <constraint firstItem="lOh-Tv-XuA" firstAttribute="top" secondItem="Z42-QQ-TqB" secondAttribute="bottom" constant="-20" id="bCB-nJ-vYc"/>
+                            <constraint firstItem="dL4-tb-XET" firstAttribute="centerX" secondItem="Z42-QQ-TqB" secondAttribute="centerX" id="gQD-wI-aJc"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="lOh-Tv-XuA" secondAttribute="bottom" id="qAM-WA-Ws4"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Z42-QQ-TqB" secondAttribute="trailing" constant="10" id="xWv-T0-uGp"/>
+                        </constraints>
+                        <connections>
+                            <outlet property="indicator" destination="dL4-tb-XET" id="dev-UP-gOF"/>
+                            <outlet property="resultLabel" destination="Z42-QQ-TqB" id="6pG-kC-YCd"/>
+                        </connections>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="116.51785714285714"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="pumpkin" width="512" height="512"/>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

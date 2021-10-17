@@ -8,25 +8,69 @@
 
 /* Begin PBXBuildFile section */
 		622FECB53B9622B472C1E8C2 /* Pods_Calculator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 488637C1B58220DF9AA26B5D /* Pods_Calculator.framework */; };
+		DE1B8B37271BAD2800EBCA14 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1B8B36271BAD2800EBCA14 /* Client.swift */; };
 		DE3CAD1A271B0B3900B8DA7D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3CAD19271B0B3900B8DA7D /* AppDelegate.swift */; };
 		DE3CAD1C271B0B3900B8DA7D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3CAD1B271B0B3900B8DA7D /* SceneDelegate.swift */; };
-		DE3CAD1E271B0B3900B8DA7D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3CAD1D271B0B3900B8DA7D /* ViewController.swift */; };
-		DE3CAD21271B0B3900B8DA7D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE3CAD1F271B0B3900B8DA7D /* Main.storyboard */; };
 		DE3CAD23271B0B3A00B8DA7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE3CAD22271B0B3A00B8DA7D /* Assets.xcassets */; };
 		DE3CAD26271B0B3A00B8DA7D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE3CAD24271B0B3A00B8DA7D /* LaunchScreen.storyboard */; };
+		DEC4F607271B174B008294B5 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC4F606271B174B008294B5 /* Coordinator.swift */; };
+		DEC4F60B271B1A74008294B5 /* HasCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC4F60A271B1A74008294B5 /* HasCustomView.swift */; };
+		DEC4F60D271B1A82008294B5 /* RxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC4F60C271B1A82008294B5 /* RxViewController.swift */; };
+		DEC4F60F271B1B1E008294B5 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC4F60E271B1B1E008294B5 /* ViewModel.swift */; };
+		DEC4F611271B1D7B008294B5 /* CoordinatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC4F610271B1D7B008294B5 /* CoordinatorType.swift */; };
+		DEC4F618271B27A4008294B5 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC4F617271B27A4008294B5 /* ApiClient.swift */; };
+		DEC4F61A271B2897008294B5 /* ApiClientErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC4F619271B2897008294B5 /* ApiClientErrors.swift */; };
+		DEC4F61D271B31EC008294B5 /* Input.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEC4F61C271B31EC008294B5 /* Input.storyboard */; };
+		DEC4F61F271B364D008294B5 /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC4F61E271B364D008294B5 /* InputView.swift */; };
+		DEE52E65271B38E40090F645 /* InputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE52E64271B38E40090F645 /* InputViewController.swift */; };
+		DEE52E67271B3BF70090F645 /* CalculatorCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE52E66271B3BF70090F645 /* CalculatorCoordinator.swift */; };
+		DEE52E69271B3EEC0090F645 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE52E68271B3EEC0090F645 /* R.generated.swift */; };
+		DEE52E6C271B4EFB0090F645 /* RX+UISegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE52E6B271B4EFB0090F645 /* RX+UISegmentedControl.swift */; };
+		DEE52E70271B73310090F645 /* InputViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE52E6F271B73310090F645 /* InputViewModel.swift */; };
+		DEE52E72271B7B620090F645 /* RxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE52E71271B7B620090F645 /* RxView.swift */; };
+		DEE52E75271B82FB0090F645 /* Result.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEE52E74271B82FB0090F645 /* Result.storyboard */; };
+		DEE52E77271B87570090F645 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE52E76271B87570090F645 /* ResultViewController.swift */; };
+		DEE52E79271B87750090F645 /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE52E78271B87750090F645 /* ResultView.swift */; };
+		DEE52E7B271B89A50090F645 /* Observable+Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE52E7A271B89A50090F645 /* Observable+Queue.swift */; };
+		DEE52E7E271B94B40090F645 /* MathExpression.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE52E7D271B94B40090F645 /* MathExpression.swift */; };
+		DEE52E80271B94E60090F645 /* ResultViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE52E7F271B94E60090F645 /* ResultViewModel.swift */; };
+		DEE52E82271B99040090F645 /* MathJSExpression.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE52E81271B99040090F645 /* MathJSExpression.swift */; };
+		DEE52E86271B99C30090F645 /* MathJSRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE52E85271B99C30090F645 /* MathJSRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		488637C1B58220DF9AA26B5D /* Pods_Calculator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Calculator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E4BDFB6644712B4D0434BC1 /* Pods-Calculator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Calculator.debug.xcconfig"; path = "Target Support Files/Pods-Calculator/Pods-Calculator.debug.xcconfig"; sourceTree = "<group>"; };
+		DE1B8B36271BAD2800EBCA14 /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
 		DE3CAD16271B0B3900B8DA7D /* Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE3CAD19271B0B3900B8DA7D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DE3CAD1B271B0B3900B8DA7D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DE3CAD1D271B0B3900B8DA7D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		DE3CAD20271B0B3900B8DA7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DE3CAD22271B0B3A00B8DA7D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE3CAD25271B0B3A00B8DA7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DE3CAD27271B0B3A00B8DA7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEC4F606271B174B008294B5 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		DEC4F60A271B1A74008294B5 /* HasCustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HasCustomView.swift; sourceTree = "<group>"; };
+		DEC4F60C271B1A82008294B5 /* RxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxViewController.swift; sourceTree = "<group>"; };
+		DEC4F60E271B1B1E008294B5 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		DEC4F610271B1D7B008294B5 /* CoordinatorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorType.swift; sourceTree = "<group>"; };
+		DEC4F617271B27A4008294B5 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
+		DEC4F619271B2897008294B5 /* ApiClientErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClientErrors.swift; sourceTree = "<group>"; };
+		DEC4F61C271B31EC008294B5 /* Input.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Input.storyboard; sourceTree = "<group>"; };
+		DEC4F61E271B364D008294B5 /* InputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputView.swift; sourceTree = "<group>"; };
+		DEE52E64271B38E40090F645 /* InputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputViewController.swift; sourceTree = "<group>"; };
+		DEE52E66271B3BF70090F645 /* CalculatorCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorCoordinator.swift; sourceTree = "<group>"; };
+		DEE52E68271B3EEC0090F645 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
+		DEE52E6B271B4EFB0090F645 /* RX+UISegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RX+UISegmentedControl.swift"; sourceTree = "<group>"; };
+		DEE52E6F271B73310090F645 /* InputViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputViewModel.swift; sourceTree = "<group>"; };
+		DEE52E71271B7B620090F645 /* RxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxView.swift; sourceTree = "<group>"; };
+		DEE52E74271B82FB0090F645 /* Result.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Result.storyboard; sourceTree = "<group>"; };
+		DEE52E76271B87570090F645 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		DEE52E78271B87750090F645 /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
+		DEE52E7A271B89A50090F645 /* Observable+Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Observable+Queue.swift"; sourceTree = "<group>"; };
+		DEE52E7D271B94B40090F645 /* MathExpression.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathExpression.swift; sourceTree = "<group>"; };
+		DEE52E7F271B94E60090F645 /* ResultViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewModel.swift; sourceTree = "<group>"; };
+		DEE52E81271B99040090F645 /* MathJSExpression.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathJSExpression.swift; sourceTree = "<group>"; };
+		DEE52E85271B99C30090F645 /* MathJSRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathJSRepository.swift; sourceTree = "<group>"; };
 		F86D8B7016BE7FB0907D2CD2 /* Pods-Calculator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Calculator.release.xcconfig"; path = "Target Support Files/Pods-Calculator/Pods-Calculator.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -59,6 +103,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		DE1B8B38271C4A8A00EBCA14 /* Calculator */ = {
+			isa = PBXGroup;
+			children = (
+				DEE52E73271B82C00090F645 /* Result */,
+				DEC4F61B271B31C0008294B5 /* Input */,
+				DEE52E66271B3BF70090F645 /* CalculatorCoordinator.swift */,
+			);
+			path = Calculator;
+			sourceTree = "<group>";
+		};
 		DE3CAD0D271B0B3900B8DA7D = {
 			isa = PBXGroup;
 			children = (
@@ -80,15 +134,115 @@
 		DE3CAD18271B0B3900B8DA7D /* Calculator */ = {
 			isa = PBXGroup;
 			children = (
-				DE3CAD19271B0B3900B8DA7D /* AppDelegate.swift */,
-				DE3CAD1B271B0B3900B8DA7D /* SceneDelegate.swift */,
-				DE3CAD1D271B0B3900B8DA7D /* ViewController.swift */,
-				DE3CAD1F271B0B3900B8DA7D /* Main.storyboard */,
-				DE3CAD22271B0B3A00B8DA7D /* Assets.xcassets */,
-				DE3CAD24271B0B3A00B8DA7D /* LaunchScreen.storyboard */,
+				DEE52E6A271B4EDC0090F645 /* Extensions */,
+				DEC4F616271B2720008294B5 /* Services */,
+				DEC4F605271B173F008294B5 /* Base */,
+				DEE52E7C271B94650090F645 /* Models */,
+				DEE52E84271B996E0090F645 /* Repositories */,
+				DEC4F615271B2558008294B5 /* Flow */,
+				DEC4F614271B2546008294B5 /* Resources */,
+				DEC4F604271B1711008294B5 /* SupportingFiles */,
 				DE3CAD27271B0B3A00B8DA7D /* Info.plist */,
 			);
 			path = Calculator;
+			sourceTree = "<group>";
+		};
+		DEC4F604271B1711008294B5 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				DEE52E68271B3EEC0090F645 /* R.generated.swift */,
+				DE3CAD24271B0B3A00B8DA7D /* LaunchScreen.storyboard */,
+				DE3CAD1B271B0B3900B8DA7D /* SceneDelegate.swift */,
+				DE3CAD19271B0B3900B8DA7D /* AppDelegate.swift */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		DEC4F605271B173F008294B5 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				DEC4F606271B174B008294B5 /* Coordinator.swift */,
+				DEC4F610271B1D7B008294B5 /* CoordinatorType.swift */,
+				DEC4F60C271B1A82008294B5 /* RxViewController.swift */,
+				DEE52E71271B7B620090F645 /* RxView.swift */,
+				DEC4F60E271B1B1E008294B5 /* ViewModel.swift */,
+				DEC4F60A271B1A74008294B5 /* HasCustomView.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		DEC4F614271B2546008294B5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DE3CAD22271B0B3A00B8DA7D /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		DEC4F615271B2558008294B5 /* Flow */ = {
+			isa = PBXGroup;
+			children = (
+				DE1B8B38271C4A8A00EBCA14 /* Calculator */,
+			);
+			path = Flow;
+			sourceTree = "<group>";
+		};
+		DEC4F616271B2720008294B5 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				DEC4F617271B27A4008294B5 /* ApiClient.swift */,
+				DEC4F619271B2897008294B5 /* ApiClientErrors.swift */,
+				DE1B8B36271BAD2800EBCA14 /* Client.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		DEC4F61B271B31C0008294B5 /* Input */ = {
+			isa = PBXGroup;
+			children = (
+				DEC4F61C271B31EC008294B5 /* Input.storyboard */,
+				DEC4F61E271B364D008294B5 /* InputView.swift */,
+				DEE52E6F271B73310090F645 /* InputViewModel.swift */,
+				DEE52E64271B38E40090F645 /* InputViewController.swift */,
+			);
+			path = Input;
+			sourceTree = "<group>";
+		};
+		DEE52E6A271B4EDC0090F645 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DEE52E6B271B4EFB0090F645 /* RX+UISegmentedControl.swift */,
+				DEE52E7A271B89A50090F645 /* Observable+Queue.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		DEE52E73271B82C00090F645 /* Result */ = {
+			isa = PBXGroup;
+			children = (
+				DEE52E74271B82FB0090F645 /* Result.storyboard */,
+				DEE52E78271B87750090F645 /* ResultView.swift */,
+				DEE52E7F271B94E60090F645 /* ResultViewModel.swift */,
+				DEE52E76271B87570090F645 /* ResultViewController.swift */,
+			);
+			path = Result;
+			sourceTree = "<group>";
+		};
+		DEE52E7C271B94650090F645 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DEE52E7D271B94B40090F645 /* MathExpression.swift */,
+				DEE52E81271B99040090F645 /* MathJSExpression.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DEE52E84271B996E0090F645 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				DEE52E85271B99C30090F645 /* MathJSRepository.swift */,
+			);
+			path = Repositories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,8 +307,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE3CAD26271B0B3A00B8DA7D /* LaunchScreen.storyboard in Resources */,
+				DEC4F61D271B31EC008294B5 /* Input.storyboard in Resources */,
 				DE3CAD23271B0B3A00B8DA7D /* Assets.xcassets in Resources */,
-				DE3CAD21271B0B3900B8DA7D /* Main.storyboard in Resources */,
+				DEE52E75271B82FB0090F645 /* Result.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,23 +382,36 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE3CAD1E271B0B3900B8DA7D /* ViewController.swift in Sources */,
+				DEE52E67271B3BF70090F645 /* CalculatorCoordinator.swift in Sources */,
+				DEE52E80271B94E60090F645 /* ResultViewModel.swift in Sources */,
+				DEE52E65271B38E40090F645 /* InputViewController.swift in Sources */,
+				DEC4F607271B174B008294B5 /* Coordinator.swift in Sources */,
+				DEC4F60D271B1A82008294B5 /* RxViewController.swift in Sources */,
 				DE3CAD1A271B0B3900B8DA7D /* AppDelegate.swift in Sources */,
+				DEE52E7B271B89A50090F645 /* Observable+Queue.swift in Sources */,
+				DEC4F618271B27A4008294B5 /* ApiClient.swift in Sources */,
+				DEE52E6C271B4EFB0090F645 /* RX+UISegmentedControl.swift in Sources */,
+				DEE52E69271B3EEC0090F645 /* R.generated.swift in Sources */,
+				DEE52E82271B99040090F645 /* MathJSExpression.swift in Sources */,
+				DEE52E77271B87570090F645 /* ResultViewController.swift in Sources */,
+				DEE52E86271B99C30090F645 /* MathJSRepository.swift in Sources */,
 				DE3CAD1C271B0B3900B8DA7D /* SceneDelegate.swift in Sources */,
+				DE1B8B37271BAD2800EBCA14 /* Client.swift in Sources */,
+				DEE52E70271B73310090F645 /* InputViewModel.swift in Sources */,
+				DEE52E79271B87750090F645 /* ResultView.swift in Sources */,
+				DEE52E7E271B94B40090F645 /* MathExpression.swift in Sources */,
+				DEC4F611271B1D7B008294B5 /* CoordinatorType.swift in Sources */,
+				DEC4F61A271B2897008294B5 /* ApiClientErrors.swift in Sources */,
+				DEE52E72271B7B620090F645 /* RxView.swift in Sources */,
+				DEC4F61F271B364D008294B5 /* InputView.swift in Sources */,
+				DEC4F60B271B1A74008294B5 /* HasCustomView.swift in Sources */,
+				DEC4F60F271B1B1E008294B5 /* ViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		DE3CAD1F271B0B3900B8DA7D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DE3CAD20271B0B3900B8DA7D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		DE3CAD24271B0B3A00B8DA7D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -377,6 +545,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 72VADQKT7F;
@@ -384,9 +553,10 @@
 				INFOPLIST_FILE = Calculator/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -406,6 +576,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 72VADQKT7F;
@@ -413,9 +584,10 @@
 				INFOPLIST_FILE = Calculator/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
