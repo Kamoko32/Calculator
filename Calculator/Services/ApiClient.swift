@@ -16,11 +16,11 @@ class ApiClient {
 
     public final func getData<Parameters: Encodable, Success: Decodable>(success: Success.Type, method: HTTPMethod, parameters: Parameters? = nil) -> Observable<Success> {
         .create { [unowned self] observer in
-            self.runRequest(
+            runRequest(
                 method: method,
                 parameters: parameters,
-                encoder: getDefaultEncoder(method: method),
-                headers: getDefaultHeaders(method: method)
+                encoder: JSONParameterEncoder.default,
+                headers: ["Content-Type": "application/json"]
             )
                 .responseJSON { response in
                     switch response.result {
@@ -44,23 +44,8 @@ class ApiClient {
         }
     }
 
-    private func getDefaultHeaders(method: HTTPMethod) -> HTTPHeaders {
-        var headers = HTTPHeaders([HTTPHeader(name: "Accept", value: "application/json")])
-        if method != .get {
-            headers.add(HTTPHeader(name: "Content-Type", value: "application/json"))
-        }
-        return headers
-    }
-
-    private func getDefaultEncoder(method: HTTPMethod) -> ParameterEncoder {
-        if method == .get {
-            return URLEncodedFormParameterEncoder.init(destination: .methodDependent)
-        }
-        return JSONParameterEncoder.default
-    }
-
     private func runRequest<Parameters: Encodable>(method: HTTPMethod, parameters: Parameters? = nil, encoder: ParameterEncoder, headers: HTTPHeaders? = nil) -> DataRequest {
-        AF.request(self.path, method: method, parameters: parameters, encoder: encoder, headers: headers)
+        AF.request(path, method: method, parameters: parameters, encoder: encoder, headers: headers)
             .validate(statusCode: 200..<300)
             .validate(contentType: ["application/json", "application/xml", "application/ld+json"])
     }
