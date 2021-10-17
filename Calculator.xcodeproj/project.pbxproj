@@ -103,6 +103,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		DE1B8B38271C4A8A00EBCA14 /* Calculator */ = {
+			isa = PBXGroup;
+			children = (
+				DEE52E73271B82C00090F645 /* Result */,
+				DEC4F61B271B31C0008294B5 /* Input */,
+				DEE52E66271B3BF70090F645 /* CalculatorCoordinator.swift */,
+			);
+			path = Calculator;
+			sourceTree = "<group>";
+		};
 		DE3CAD0D271B0B3900B8DA7D = {
 			isa = PBXGroup;
 			children = (
@@ -172,9 +182,7 @@
 		DEC4F615271B2558008294B5 /* Flow */ = {
 			isa = PBXGroup;
 			children = (
-				DEE52E73271B82C00090F645 /* Result */,
-				DEC4F61B271B31C0008294B5 /* Input */,
-				DEE52E66271B3BF70090F645 /* CalculatorCoordinator.swift */,
+				DE1B8B38271C4A8A00EBCA14 /* Calculator */,
 			);
 			path = Flow;
 			sourceTree = "<group>";
