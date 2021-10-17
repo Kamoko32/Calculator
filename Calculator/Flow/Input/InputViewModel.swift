@@ -9,7 +9,7 @@ class InputViewModel: ViewModel<CalculatorCoordinator> {
         case multiplication
         case division
 
-        fileprivate var operationSign: String {
+        fileprivate var sign: String {
             switch self {
                 case .addition: return "+"
                 case .subtraction: return "-"
@@ -27,9 +27,9 @@ class InputViewModel: ViewModel<CalculatorCoordinator> {
     let isCalculateButtonEnabled = BehaviorRelay<Bool>(value: false)
 
     override func setupBindings() {
-        let expresion = Observable.combineLatest(stepperValue, sliderValue, operation)
-            .map { stepper, slider, operation in
-                "\(stepper)" + "\(operation.operationSign)" + "\(slider)"
+        let expression = Observable.combineLatest(stepperValue, sliderValue, operation)
+            .map { stepper, slider, operation -> Expression in
+            .init(firstValue: stepper, operationSign: operation.sign, secondValue: slider)
             }
 
         Observable.combineLatest(operation, sliderValue)
@@ -40,9 +40,9 @@ class InputViewModel: ViewModel<CalculatorCoordinator> {
             .disposed(by: bag)
 
         calculate
-            .withLatestFrom(expresion)
-            .subscribe(onNext: { [weak self] in
-                print($0)
+            .withLatestFrom(expression)
+            .subscribe(onNext: { [unowned self] in
+                coordinator?.presentResultScreen(expression: $0)
             }).disposed(by: bag)
     }
 }

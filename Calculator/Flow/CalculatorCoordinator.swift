@@ -13,4 +13,11 @@ class CalculatorCoordinator: Coordinator {
         inputScreen.viewModel.coordinator = self
         navigationController.viewControllers = [inputScreen]
     }
+
+    func presentResultScreen(expression: Expression) {
+        let resultScreen = R.storyboard.result.resultViewController()!
+        resultScreen.viewModel.coordinator = self
+        resultScreen.viewModel.calculate(expression: expression)
+        rootViewController.present(resultScreen, animated: true, completion: nil)
+    }
 }
