@@ -13,6 +13,7 @@
 		DE3CAD1C271B0B3900B8DA7D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3CAD1B271B0B3900B8DA7D /* SceneDelegate.swift */; };
 		DE3CAD23271B0B3A00B8DA7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE3CAD22271B0B3A00B8DA7D /* Assets.xcassets */; };
 		DE3CAD26271B0B3A00B8DA7D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE3CAD24271B0B3A00B8DA7D /* LaunchScreen.storyboard */; };
+		DE659A9E271DBEE000FE1F20 /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE659A9D271DBEE000FE1F20 /* Endpoints.swift */; };
 		DEC4F607271B174B008294B5 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC4F606271B174B008294B5 /* Coordinator.swift */; };
 		DEC4F60B271B1A74008294B5 /* HasCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC4F60A271B1A74008294B5 /* HasCustomView.swift */; };
 		DEC4F60D271B1A82008294B5 /* RxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC4F60C271B1A82008294B5 /* RxViewController.swift */; };
@@ -48,6 +49,7 @@
 		DE3CAD22271B0B3A00B8DA7D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE3CAD25271B0B3A00B8DA7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DE3CAD27271B0B3A00B8DA7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE659A9D271DBEE000FE1F20 /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
 		DEC4F606271B174B008294B5 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		DEC4F60A271B1A74008294B5 /* HasCustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HasCustomView.swift; sourceTree = "<group>"; };
 		DEC4F60C271B1A82008294B5 /* RxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxViewController.swift; sourceTree = "<group>"; };
@@ -193,6 +195,7 @@
 				DEC4F617271B27A4008294B5 /* ApiClient.swift */,
 				DEC4F619271B2897008294B5 /* ApiClientErrors.swift */,
 				DE1B8B36271BAD2800EBCA14 /* Client.swift */,
+				DE659A9D271DBEE000FE1F20 /* Endpoints.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -391,6 +394,7 @@
 				DEE52E7B271B89A50090F645 /* Observable+Queue.swift in Sources */,
 				DEC4F618271B27A4008294B5 /* ApiClient.swift in Sources */,
 				DEE52E6C271B4EFB0090F645 /* RX+UISegmentedControl.swift in Sources */,
+				DE659A9E271DBEE000FE1F20 /* Endpoints.swift in Sources */,
 				DEE52E69271B3EEC0090F645 /* R.generated.swift in Sources */,
 				DEE52E82271B99040090F645 /* MathJSExpression.swift in Sources */,
 				DEE52E77271B87570090F645 /* ResultViewController.swift in Sources */,
