@@ -14,9 +14,9 @@ class ApiClient {
         self.path = path
     }
 
-    public final func getData<Parameters: Encodable, Success: Decodable>(success: Success.Type, method: HTTPMethod, parameters: Parameters? = nil) -> Observable<Success> {
+    public final func runRequest<Parameters: Encodable, Success: Decodable>(success: Success.Type, method: HTTPMethod, parameters: Parameters? = nil) -> Observable<Success> {
         .create { [unowned self] observer in
-            runRequest(
+            run(
                 method: method,
                 parameters: parameters,
                 encoder: JSONParameterEncoder.default,
@@ -44,7 +44,7 @@ class ApiClient {
         }
     }
 
-    private func runRequest<Parameters: Encodable>(method: HTTPMethod, parameters: Parameters? = nil, encoder: ParameterEncoder, headers: HTTPHeaders? = nil) -> DataRequest {
+    private func run<Parameters: Encodable>(method: HTTPMethod, parameters: Parameters? = nil, encoder: ParameterEncoder, headers: HTTPHeaders? = nil) -> DataRequest {
         AF.request(path, method: method, parameters: parameters, encoder: encoder, headers: headers)
             .validate(statusCode: 200..<300)
             .validate(contentType: ["application/json", "application/xml", "application/ld+json"])
